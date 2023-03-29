@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, user-scalable=0"
+        />
+        <title>Spanish</title>
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <style>
+            /*
+! tailwindcss v3.3.0 | MIT License | https://tailwindcss.com
+*/ /*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+            *,
+            ::before,
+            ::after {
+                box-sizing: border-box; /* 1 */
+                border-width: 0; /* 2 */
+                border-style: solid; /* 2 */
+                border-color: #e5e7eb; /* 2 */
+            }
+
+            ::before,
+            ::after {
+                --tw-content: '';
+            }
+
+            /*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+*/
+
+            html {
+                line-height: 1.5; /* 1 */
+                -webkit-text-size-adjust: 100%; /* 2 */
+                -moz-tab-size: 4; /* 3 */
+                -o-tab-size: 4;
+                tab-size: 4; /* 3 */
+                font-family: Inter var; /* 4 */
+                -webkit-font-feature-settings: normal;
+                font-feature-settings: normal; /* 5 */
+                font-variation-settings: normal; /* 6 */
+            }
+
+            /*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+            body {
+                margin: 0; /* 1 */
+                line-height: inherit; /* 2 */
+            }
+
+            /*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+            hr {
+                height: 0; /* 1 */
+                color: inherit; /* 2 */
+                border-top-width: 1px; /* 3 */
+            }
+
+            /*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+            abbr:where([title]) {
+                -webkit-text-decoration: underline dotted;
+                text-decoration: underline dotted;
+            }
+
+            /*
+Remove the default font size and weight for headings.
+*/
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: inherit;
+                font-weight: inherit;
+            }
+
+            /*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+            a {
+                color: inherit;
+                text-decoration: inherit;
+            }
+
+            /*
+Add the correct font weight in Edge and Safari.
+*/
+
+            b,
+            strong {
+                font-weight: bolder;
+            }
+
+            /*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+            code,
+            kbd,
+            samp,
+            pre {
+                font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+                    Consolas, 'Liberation Mono', 'Courier New', monospace; /* 1 */
+                font-size: 1em; /* 2 */
+            }
+
+            /*
+Add the correct font size in all browsers.
+*/
+
+            small {
+                font-size: 80%;
+            }
+
+            /*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+            sub,
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline;
+            }
+
+            sub {
+                bottom: -0.25em;
+            }
+
+            sup {
+                top: -0.5em;
+            }
+
+            /*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+            table {
+                text-indent: 0; /* 1 */
+                border-color: inherit; /* 2 */
+                border-collapse: collapse; /* 3 */
+            }
+
+            /*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                font-family: inherit; /* 1 */
+                font-size: 100%; /* 1 */
+                font-weight: inherit; /* 1 */
+                line-height: inherit; /* 1 */
+                color: inherit; /* 1 */
+                margin: 0; /* 2 */
+                padding: 0; /* 3 */
+            }
+
+            /*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+            button,
+            select {
+                text-transform: none;
+            }
+
+            /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+            button,
+            [type='button'],
+            [type='reset'],
+            [type='submit'] {
+                -webkit-appearance: button; /* 1 */
+                background-color: transparent; /* 2 */
+                background-image: none; /* 2 */
+            }
+
+            /*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+            :-moz-focusring {
+                outline: auto;
+            }
+
+            /*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+            :-moz-ui-invalid {
+                box-shadow: none;
+            }
+
+            /*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+            progress {
+                vertical-align: baseline;
+            }
+
+            /*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+            ::-webkit-inner-spin-button,
+            ::-webkit-outer-spin-button {
+                height: auto;
+            }
+
+            /*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+            [type='search'] {
+                -webkit-appearance: textfield; /* 1 */
+                outline-offset: -2px; /* 2 */
+            }
+
+            /*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+            ::-webkit-search-decoration {
+                -webkit-appearance: none;
+            }
+
+            /*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+            ::-webkit-file-upload-button {
+                -webkit-appearance: button; /* 1 */
+                font: inherit; /* 2 */
+            }
+
+            /*
+Add the correct display in Chrome and Safari.
+*/
+
+            summary {
+                display: list-item;
+            }
+
+            /*
+Removes the default spacing and border for appropriate elements.
+*/
+
+            blockquote,
+            dl,
+            dd,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            hr,
+            figure,
+            p,
+            pre {
+                margin: 0;
+            }
+
+            fieldset {
+                margin: 0;
+                padding: 0;
+            }
+
+            legend {
+                padding: 0;
+            }
+
+            ol,
+            ul,
+            menu {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            /*
+Prevent resizing textareas horizontally by default.
+*/
+
+            textarea {
+                resize: vertical;
+            }
+
+            /*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+            input::-webkit-input-placeholder,
+            textarea::-webkit-input-placeholder {
+                opacity: 1; /* 1 */
+                color: #9ca3af; /* 2 */
+            }
+
+            input::-moz-placeholder,
+            textarea::-moz-placeholder {
+                opacity: 1; /* 1 */
+                color: #9ca3af; /* 2 */
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+                opacity: 1; /* 1 */
+                color: #9ca3af; /* 2 */
+            }
+
+            /*
+Set the default cursor for buttons.
+*/
+
+            button,
+            [role='button'] {
+                cursor: pointer;
+            }
+
+            /*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+            :disabled {
+                cursor: default;
+            }
+
+            /*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+            img,
+            svg,
+            video,
+            canvas,
+            audio,
+            iframe,
+            embed,
+            object {
+                display: block; /* 1 */
+                vertical-align: middle; /* 2 */
+            }
+
+            /*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+            img,
+            video {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Make elements with the HTML hidden attribute stay hidden by default */
+            [hidden] {
+                display: none;
+            }
+
+            *,
+            ::before,
+            ::after {
+                --tw-border-spacing-x: 0;
+                --tw-border-spacing-y: 0;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                --tw-pan-x: ;
+                --tw-pan-y: ;
+                --tw-pinch-zoom: ;
+                --tw-scroll-snap-strictness: proximity;
+                --tw-ordinal: ;
+                --tw-slashed-zero: ;
+                --tw-numeric-figure: ;
+                --tw-numeric-spacing: ;
+                --tw-numeric-fraction: ;
+                --tw-ring-inset: ;
+                --tw-ring-offset-width: 0px;
+                --tw-ring-offset-color: #fff;
+                --tw-ring-color: rgb(59 130 246 / 0.5);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                --tw-blur: ;
+                --tw-brightness: ;
+                --tw-contrast: ;
+                --tw-grayscale: ;
+                --tw-hue-rotate: ;
+                --tw-invert: ;
+                --tw-saturate: ;
+                --tw-sepia: ;
+                --tw-drop-shadow: ;
+                --tw-backdrop-blur: ;
+                --tw-backdrop-brightness: ;
+                --tw-backdrop-contrast: ;
+                --tw-backdrop-grayscale: ;
+                --tw-backdrop-hue-rotate: ;
+                --tw-backdrop-invert: ;
+                --tw-backdrop-opacity: ;
+                --tw-backdrop-saturate: ;
+                --tw-backdrop-sepia: ;
+            }
+
+            ::-webkit-backdrop {
+                --tw-border-spacing-x: 0;
+                --tw-border-spacing-y: 0;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                --tw-pan-x: ;
+                --tw-pan-y: ;
+                --tw-pinch-zoom: ;
+                --tw-scroll-snap-strictness: proximity;
+                --tw-ordinal: ;
+                --tw-slashed-zero: ;
+                --tw-numeric-figure: ;
+                --tw-numeric-spacing: ;
+                --tw-numeric-fraction: ;
+                --tw-ring-inset: ;
+                --tw-ring-offset-width: 0px;
+                --tw-ring-offset-color: #fff;
+                --tw-ring-color: rgb(59 130 246 / 0.5);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                --tw-blur: ;
+                --tw-brightness: ;
+                --tw-contrast: ;
+                --tw-grayscale: ;
+                --tw-hue-rotate: ;
+                --tw-invert: ;
+                --tw-saturate: ;
+                --tw-sepia: ;
+                --tw-drop-shadow: ;
+                --tw-backdrop-blur: ;
+                --tw-backdrop-brightness: ;
+                --tw-backdrop-contrast: ;
+                --tw-backdrop-grayscale: ;
+                --tw-backdrop-hue-rotate: ;
+                --tw-backdrop-invert: ;
+                --tw-backdrop-opacity: ;
+                --tw-backdrop-saturate: ;
+                --tw-backdrop-sepia: ;
+            }
+
+            ::backdrop {
+                --tw-border-spacing-x: 0;
+                --tw-border-spacing-y: 0;
+                --tw-translate-x: 0;
+                --tw-translate-y: 0;
+                --tw-rotate: 0;
+                --tw-skew-x: 0;
+                --tw-skew-y: 0;
+                --tw-scale-x: 1;
+                --tw-scale-y: 1;
+                --tw-pan-x: ;
+                --tw-pan-y: ;
+                --tw-pinch-zoom: ;
+                --tw-scroll-snap-strictness: proximity;
+                --tw-ordinal: ;
+                --tw-slashed-zero: ;
+                --tw-numeric-figure: ;
+                --tw-numeric-spacing: ;
+                --tw-numeric-fraction: ;
+                --tw-ring-inset: ;
+                --tw-ring-offset-width: 0px;
+                --tw-ring-offset-color: #fff;
+                --tw-ring-color: rgb(59 130 246 / 0.5);
+                --tw-ring-offset-shadow: 0 0 #0000;
+                --tw-ring-shadow: 0 0 #0000;
+                --tw-shadow: 0 0 #0000;
+                --tw-shadow-colored: 0 0 #0000;
+                --tw-blur: ;
+                --tw-brightness: ;
+                --tw-contrast: ;
+                --tw-grayscale: ;
+                --tw-hue-rotate: ;
+                --tw-invert: ;
+                --tw-saturate: ;
+                --tw-sepia: ;
+                --tw-drop-shadow: ;
+                --tw-backdrop-blur: ;
+                --tw-backdrop-brightness: ;
+                --tw-backdrop-contrast: ;
+                --tw-backdrop-grayscale: ;
+                --tw-backdrop-hue-rotate: ;
+                --tw-backdrop-invert: ;
+                --tw-backdrop-opacity: ;
+                --tw-backdrop-saturate: ;
+                --tw-backdrop-sepia: ;
+            }
+            .mx-4 {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            .my-8 {
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+            .-ml-px {
+                margin-left: -1px;
+            }
+            .mt-2 {
+                margin-top: 0.5rem;
+            }
+            .mt-4 {
+                margin-top: 1rem;
+            }
+            .flex {
+                display: flex;
+            }
+            .grid {
+                display: grid;
+            }
+            .h-px {
+                height: 1px;
+            }
+            .max-w-2xl {
+                max-width: 42rem;
+            }
+            .grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+            .grid-cols-4 {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+            .flex-col {
+                flex-direction: column;
+            }
+            .items-center {
+                align-items: center;
+            }
+            .justify-between {
+                justify-content: space-between;
+            }
+            .gap-4 {
+                gap: 1rem;
+            }
+            .rounded-md {
+                border-radius: 0.375rem;
+            }
+            .rounded-xl {
+                border-radius: 0.75rem;
+            }
+            .rounded-l-md {
+                border-top-left-radius: 0.375rem;
+                border-bottom-left-radius: 0.375rem;
+            }
+            .rounded-r-md {
+                border-top-right-radius: 0.375rem;
+                border-bottom-right-radius: 0.375rem;
+            }
+            .rounded-t-xl {
+                border-top-left-radius: 0.75rem;
+                border-top-right-radius: 0.75rem;
+            }
+            .border-0 {
+                border-width: 0px;
+            }
+            .bg-gray-200 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+            }
+            .bg-gray-800 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+            }
+            .bg-sky-950 {
+                --tw-bg-opacity: 1;
+                background-color: rgb(8 47 73 / var(--tw-bg-opacity));
+            }
+            .bg-white {
+                --tw-bg-opacity: 1;
+                background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+            }
+            .px-3 {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+            .py-2 {
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+            }
+            .py-4 {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+            .py-8 {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .pb-2 {
+                padding-bottom: 0.5rem;
+            }
+            .pt-4 {
+                padding-top: 1rem;
+            }
+            .pt-6 {
+                padding-top: 1.5rem;
+            }
+            .text-center {
+                text-align: center;
+            }
+            .text-right {
+                text-align: right;
+            }
+            .text-2xl {
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+            .text-sm {
+                font-size: 0.875rem;
+                line-height: 1.25rem;
+            }
+            .font-bold {
+                font-weight: 700;
+            }
+            .font-medium {
+                font-weight: 500;
+            }
+            .font-semibold {
+                font-weight: 600;
+            }
+            .text-gray-300 {
+                --tw-text-opacity: 1;
+                color: rgb(209 213 219 / var(--tw-text-opacity));
+            }
+            .text-gray-900 {
+                --tw-text-opacity: 1;
+                color: rgb(17 24 39 / var(--tw-text-opacity));
+            }
+            .text-green-500 {
+                --tw-text-opacity: 1;
+                color: rgb(34 197 94 / var(--tw-text-opacity));
+            }
+            .text-red-800 {
+                --tw-text-opacity: 1;
+                color: rgb(153 27 27 / var(--tw-text-opacity));
+            }
+            .text-white {
+                --tw-text-opacity: 1;
+                color: rgb(255 255 255 / var(--tw-text-opacity));
+            }
+            .text-yellow-300 {
+                --tw-text-opacity: 1;
+                color: rgb(253 224 71 / var(--tw-text-opacity));
+            }
+            .shadow-lg {
+                --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+                    0 4px 6px -4px rgb(0 0 0 / 0.1);
+                --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+                    0 4px 6px -4px var(--tw-shadow-color);
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+                    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+            .shadow-sm {
+                --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+                --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+                box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+                    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+            }
+            .ring-1 {
+                --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+                    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+                --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+                    calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+                box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+                    var(--tw-shadow, 0 0 #0000);
+            }
+            .ring-inset {
+                --tw-ring-inset: inset;
+            }
+            .ring-gray-300 {
+                --tw-ring-opacity: 1;
+                --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
+            }
+            .blur {
+                --tw-blur: blur(8px);
+                -webkit-filter: var(--tw-blur) var(--tw-brightness)
+                    var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate)
+                    var(--tw-invert) var(--tw-saturate) var(--tw-sepia)
+                    var(--tw-drop-shadow);
+                filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+                    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+                    var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+            }
+            .filter {
+                -webkit-filter: var(--tw-blur) var(--tw-brightness)
+                    var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate)
+                    var(--tw-invert) var(--tw-saturate) var(--tw-sepia)
+                    var(--tw-drop-shadow);
+                filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+                    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+                    var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+            }
+            .hover\:bg-gray-50:hover {
+                --tw-bg-opacity: 1;
+                background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+            }
+            .focus\:z-10:focus {
+                z-index: 10;
+            }
+            .focus\:bg-gray-700:focus {
+                --tw-bg-opacity: 1;
+                background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+            }
+            .focus\:text-white:focus {
+                --tw-text-opacity: 1;
+                color: rgb(255 255 255 / var(--tw-text-opacity));
+            }
+            @media (min-width: 768px) {
+                .md\:mx-auto {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-sky-950">
+        <div class="bg-gray-800">
+            <div
+                class="grid grid-cols-4 justify-between text-center items-center"
+            >
+                <a
+                    href="#"
+                    class="text-gray-300 focus:bg-gray-700 focus:text-white px-3 py-2 text-sm font-medium"
+                    onClick="setCards(-1, 'All Cards')"
+                    >All</a
+                >
+                <a
+                    href="#"
+                    class="text-gray-300 focus:bg-gray-700 focus:text-white px-3 py-2 text-sm font-medium"
+                    onClick="setCards(0, 'Alpha Numerals')"
+                    >Alpha Numerals</a
+                >
+                <a
+                    href="#"
+                    class="text-gray-300 focus:bg-gray-700 focus:text-white px-3 py-2 text-sm font-medium"
+                    onClick="setCards(1, 'Traffic Stops')"
+                    >Traffic Stops</a
+                >
+                <a
+                    href="#"
+                    class="text-gray-300 focus:bg-gray-700 focus:text-white px-3 py-2 text-sm font-medium"
+                    onClick="setCards(2, 'Arrest & Control')"
+                    >Arrest &amp; Control</a
+                >
+            </div>
+        </div>
+        <h3 id="heading" class="text-center text-white pt-4 text-2xl">
+            Spanish Cards
+        </h3>
+        <div
+            class="max-w-2xl mx-4 md:mx-auto mt-4 bg-white rounded-xl shadow-lg flex flex-col"
+        >
+            <button
+                type="button"
+                class="-ml-px bg-white px-3 py-4 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10 rounded-t-xl"
+                onClick="showTip()"
+            >
+                <span class="text-yellow-300 font-bold">💡</span>
+                Hint
+            </button>
+            <div id="show" class="text-center pt-4">
+                Select a card set from above
+            </div>
+            <hr class="h-px my-8 bg-gray-200 border-0" />
+            <div id="hide" class="text-white pb-2">
+                <div
+                    id="hideBlur"
+                    class="flex flex-col items-center gap-4"
+                    style="filter: blur(2.5px)"
+                >
+                    <span id="hideText" class="text-center">&nbsp;</span>
+                    <span id="hidePronunciation" class="text-center"
+                        >&nbsp;</span
+                    >
+                </div>
+                <div id="hideHint" class="text-center pt-4">&nbsp;</div>
+            </div>
+            <span class="grid grid-cols-3 rounded-md shadow-sm pt-6">
+                <button
+                    type="button"
+                    class="rounded-l-md bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+                    onClick="wrong()"
+                >
+                    <span class="text-red-800 font-bold">✕</span>
+                    Wrong
+                </button>
+                <button
+                    type="button"
+                    class="-ml-px bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+                    onClick="showAnswer()"
+                >
+                    ⓐⓝⓢⓦⓔⓡ
+                </button>
+                <button
+                    type="button"
+                    class="-ml-px rounded-r-md bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+                    onClick="correct()"
+                >
+                    <span class="text-green-500 font-bold">✓</span>
+                    Correct
+                </button>
+            </span>
+        </div>
+        <div
+            id="remainingCards"
+            class="text-right mt-2 max-w-2xl mx-4 md:mx-auto text-white"
+        >
+            0 out of 0 correct.
+        </div>
+        <script>
+            const hideEl = document.getElementById('hide');
+            let hideElHidden = true,
+                cards = [],
+                wrongCards = [],
+                cardCount = 0,
+                cardCorrectCount = 0,
+                currentCard = 0;
+
+            const showTip = () => {
+                if (hideElHidden) {
+                    hideEl.classList.remove('text-white');
+                    hideElHidden = false;
+                } else {
+                    document.getElementById('hideBlur').style.filter = null;
+                }
+            };
+
+            const showAnswer = () => {
+                hideElHidden = false;
+                hideEl.classList.remove('text-white');
+                document.getElementById('hideBlur').style.filter = null;
+            };
+
+            const resetTip = () => {
+                hideEl.classList.add('text-white');
+                document.getElementById('hideBlur').style.filter =
+                    'blur(2.5px)';
+                hideElHidden = true;
+            };
+
+            const setCards = (deck, text) => {
+                document.getElementById('heading').innerHTML = text;
+
+                if (deck === -1) {
+                    cards = terms[0]['terms'].concat(
+                        terms[1]['terms'],
+                        terms[2]['terms']
+                    );
+                } else {
+                    cards = [...terms[deck]['terms']];
+                }
+
+                cardCount = cards.length;
+                currentCard = 0;
+                cardCorrectCount = 0;
+                wrongCards = [];
+
+                showCard(0);
+
+                updateCardCount();
+                resetTip();
+            };
+
+            const showCard = (num) => {
+                document.getElementById('show').innerHTML = cards[num][
+                    'definition'
+                ]
+                    ? cards[num]['definition']
+                    : '';
+                document.getElementById('hideText').innerHTML = cards[num][
+                    'term'
+                ]
+                    ? cards[num]['term']
+                    : '';
+                document.getElementById('hidePronunciation').innerHTML = cards[
+                    num
+                ]['pronunciation']
+                    ? cards[num]['pronunciation']
+                    : '';
+                document.getElementById('hideHint').innerHTML = cards[num][
+                    'hint'
+                ]
+                    ? cards[num]['hint']
+                    : '';
+            };
+
+            const updateCardCount = () => {
+                document.getElementById(
+                    'remainingCards'
+                ).innerHTML = `${cardCorrectCount} of ${cardCount} correct.`;
+
+                console.log(cards);
+            };
+
+            const correct = () => {
+                cards.shift();
+                cardCorrectCount = cardCorrectCount + 1;
+
+                showCard(0);
+
+                updateCardCount();
+
+                resetTip();
+            };
+
+            const wrong = () => {
+                cards.push(cards[0]);
+                cards.shift();
+
+                showCard(0);
+
+                updateCardCount();
+
+                resetTip();
+            };
+
+            let terms = [
+                {
+                    title: 'Alpha Numerals',
+                    terms: [
+                        {
+                            definition: 'A',
+                            pronunciation: 'Ah',
+                        },
+                        {
+                            definition: 'B',
+                            pronunciation: 'Beh',
+                        },
+                        {
+                            definition: 'C',
+                            pronunciation: 'Seh',
+                        },
+                        {
+                            definition: 'D',
+                            pronunciation: 'Deh',
+                        },
+                        {
+                            definition: 'E',
+                            pronunciation: 'Eh',
+                        },
+                        {
+                            definition: 'F',
+                            pronunciation: 'Efe',
+                        },
+                        {
+                            definition: 'G',
+                            pronunciation: 'Heh',
+                            hint: 'Hay',
+                        },
+                        {
+                            definition: 'H',
+                            pronunciation: 'Ache',
+                            hint: 'Sneeze = Acho',
+                        },
+                        {
+                            definition: 'I',
+                            pronunciation: 'Ee',
+                        },
+                        {
+                            definition: 'J',
+                            pronunciation: 'Hota',
+                        },
+                        {
+                            definition: 'K',
+                            pronunciation: 'Kah',
+                            hint: 'A boston car',
+                        },
+                        {
+                            definition: 'L',
+                            pronunciation: 'Eleh',
+                        },
+                        {
+                            definition: 'M',
+                            pronunciation: 'Emeh',
+                        },
+                        {
+                            definition: 'N',
+                            pronunciation: 'Eneh',
+                        },
+                        {
+                            definition: 'Ñ',
+                            pronunciation: 'Enyeh',
+                        },
+                        {
+                            definition: 'O',
+                            pronunciation: 'Oh',
+                        },
+                        {
+                            definition: 'P',
+                            pronunciation: 'Peh',
+                        },
+                        {
+                            definition: 'Q',
+                            pronunciation: 'Kooh',
+                            hint: 'Army overthrowing leader',
+                        },
+                        {
+                            definition: 'R',
+                            pronunciation: 'Ereh',
+                        },
+                        {
+                            definition: 'RR',
+                            pronunciation: 'Erreh / Doble Ereh',
+                        },
+                        {
+                            definition: 'S',
+                            pronunciation: 'Eseh',
+                        },
+                        {
+                            definition: 'T',
+                            pronunciation: 'Teh',
+                        },
+                        {
+                            definition: 'U',
+                            pronunciation: 'Ooh',
+                        },
+                        {
+                            definition: 'V',
+                            pronunciation: 'Veh',
+                        },
+                        {
+                            definition: 'W',
+                            pronunciation: 'Doble Ooh / Doble Veh',
+                        },
+                        {
+                            definition: 'X',
+                            pronunciation: 'Eh·keys',
+                        },
+                        {
+                            definition: 'Y',
+                            pronunciation: 'Ee·gri·eg·ah',
+                        },
+                        {
+                            definition: 'Z',
+                            pronunciation: 'Setah',
+                        },
+                        {
+                            definition: '0',
+                            pronunciation: 'Cero',
+                        },
+                        {
+                            definition: '1',
+                            pronunciation: 'Uno',
+                        },
+                        {
+                            definition: '2',
+                            pronunciation: 'Dos',
+                        },
+                        {
+                            definition: '3',
+                            pronunciation: 'Tres',
+                        },
+                        {
+                            definition: '4',
+                            pronunciation: 'Quatro',
+                        },
+                        {
+                            definition: '5',
+                            pronunciation: 'Cinco',
+                        },
+                        {
+                            definition: '6',
+                            pronunciation: 'Seis',
+                        },
+                        {
+                            definition: '7',
+                            pronunciation: 'Si·ete',
+                        },
+                        {
+                            definition: '8',
+                            pronunciation: 'O·cho',
+                        },
+                        {
+                            definition: '9',
+                            pronunciation: 'Nu·ev·e',
+                        },
+                        {
+                            definition: 'One number at a time.',
+                            term: 'Un número a la vez.',
+                            pronunciation: 'Un nú·mer·o a la ve·z.',
+                        },
+                    ],
+                },
+                {
+                    title: 'Traffic Stops',
+                    terms: [
+                        {
+                            term: 'Su licencia, por favor.',
+                            pronunciation: 'Su li·cen·ci·a por fa·vor',
+                            definition: 'Your license, please.',
+                        },
+                        {
+                            term: '¿Es su dirección correcta?',
+                            pronunciation: 'Es su di·rec·ci·ón cor·rect·a?',
+                            definition: 'Is this your correct address?',
+                        },
+                        {
+                            term: 'Su licencia está suspendida.',
+                            pronunciation:
+                                'Su li·cen·ci·a es·ta su·spen·di·da.',
+                            definition: 'Your license is suspended.',
+                        },
+                        {
+                            term: 'Su licencia está revocada.',
+                            pronunciation: 'Su li·cen·ci·a es·tá re·vo·ca·da.',
+                            definition: 'Your license is revoked.',
+                        },
+                        {
+                            term: 'La placa está vencida.',
+                            pronunciation: 'La pla·ca es·tá ven·ci·da.',
+                            definition: 'The license plate is expired.',
+                        },
+                        {
+                            term: '¿No tiene licencia?',
+                            pronunciation: 'No ti·en·e li·cen·ci·a',
+                            definition: "You don't have a license?",
+                        },
+                        {
+                            term: 'Papeles de carro.',
+                            pronunciation: 'Pa·pel·es de car·ro',
+                            definition: 'Vehicle registration for the car.',
+                        },
+                        {
+                            term: 'Seguro del carro.',
+                            pronunciation: 'Se·gu·ro del car·ro',
+                            definition: 'Your automobile insurance.',
+                        },
+                        {
+                            term: 'Infracción de tránsito',
+                            pronunciation: 'In·frac·ción de trá·n·si·to',
+                            definition: 'Traffic infraction',
+                        },
+                        {
+                            term: 'Exceso de velocidad',
+                            pronunciation: 'Ex·ce·so de ve·lo·ci·dad',
+                            definition: 'Excessive speed',
+                        },
+                        {
+                            term: 'No tiene luz.',
+                            pronunciation: 'No ti·en·e luz.',
+                            definition: 'You do not have lights.',
+                        },
+                        {
+                            term: 'No tiene luz de frenos.',
+                            pronunciation: 'No ti·en·e luz de fre·nos',
+                            definition: 'You do not have brake lights.',
+                        },
+                        {
+                            term: 'Abroche el cinto.',
+                            pronunciation: 'A·bro·che el cin·to.',
+                            definition: 'Buckle up',
+                        },
+                        {
+                            term: 'Voy a darle una multa.',
+                            pronunciation: 'Voy a dar·le un·a mul·ta.',
+                            definition: 'I am going to give you a ticket.',
+                        },
+                        {
+                            term: 'Firme aquí.',
+                            pronunciation: 'Fir·me aq·uí.',
+                            definition: 'Sign here.',
+                        },
+                        {
+                            term: 'Espere en su carro.',
+                            pronunciation: 'Es·per·e en su car·ro.',
+                            definition: 'Wait in your car.',
+                        },
+                        {
+                            term: '¡Regrese!',
+                            pronunciation: '¡Re·gre·se!',
+                            definition: 'Return',
+                        },
+                        {
+                            term: 'Salga del carro.',
+                            pronunciation: 'Sal·ga del car·ro.',
+                            definition: 'Exit the car.',
+                        },
+                        {
+                            term: 'Venga conmigo.',
+                            pronunciation: 'Ven·ga con·mi·go.',
+                            definition: 'Come with me.',
+                        },
+                        {
+                            term: '¡Alto!',
+                            pronunciation: '¡Al·to!',
+                            definition: 'Stop',
+                        },
+                        {
+                            term: '¡Apague el motor!',
+                            pronunciation: '¡A·pa·gue el mo·tor!',
+                            definition: 'Turn off the motor!',
+                        },
+                        {
+                            term: '¡Llaves afuera!',
+                            pronunciation: 'Lla·ves a·fue·ra!',
+                            definition: 'Keys outside.',
+                            hint: 'afuera = af·wear·a',
+                        },
+                        {
+                            term: '¡Suéltelas!',
+                            pronunciation: 'Su·él·te·las!',
+                            definition: 'Drop them!',
+                            hint: 'Swell·te·las',
+                        },
+                        {
+                            term: 'Conductor',
+                            pronunciation: 'Con·duc·tor',
+                            definition: 'Driver',
+                        },
+                        {
+                            term: 'Pasajero del frente',
+                            pronunciation: 'Pa·sa·jer·o del fr·en·te',
+                            definition: 'Front passenger',
+                        },
+                        {
+                            term: 'Pasajero de atrás',
+                            pronunciation: 'Pa·sa·jer·o de a·trás',
+                            definition: 'Rear passenger',
+                        },
+                        {
+                            term: 'Pasajero de atrás del conductor',
+                            pronunciation:
+                                'Pa·sa·jer·o de a·trás del con·duc·tor',
+                            definition: 'Passenger behind the driver',
+                        },
+                        {
+                            term: '¡Pasajero del frente, salga!',
+                            pronunciation: 'Pa·sa·jer·o del fr·en·te, sal·ga!',
+                            definition: 'Front passenger, out.',
+                        },
+                        {
+                            term: '¡Pasajero de atrás, salga!',
+                            pronunciation: 'Pa·sa·jer·o de a·trás, sal·ga!',
+                            definition: 'Rear passenger, out.',
+                        },
+                        {
+                            term: '¡Pasajero de atrás del conductor, salga!',
+                            pronunciation:
+                                'Pa·sa·jer·o de a·trás del con·duc·tor, sal·ga!',
+                            definition: 'Passenger behind the driver, out!',
+                        },
+                        {
+                            term: '¡Conductor, salga!',
+                            pronunciation: 'Con·duc·tor, sal·ga!',
+                            definition: 'Driver, out',
+                        },
+                        {
+                            term: '¡Despacio!',
+                            pronunciation: 'De·spa·ci·o!',
+                            definition: 'Slowly',
+                        },
+                        {
+                            term: '¡Ahorita!',
+                            pronunciation: 'Ah·or·it·a!',
+                            definition: 'Right now',
+                        },
+                        {
+                            term: '¡Ahora!',
+                            pronunciation: 'Ah·or·a',
+                            definition: 'Now',
+                        },
+                    ],
+                },
+                {
+                    title: 'Arrest & Control',
+                    terms: [
+                        {
+                            term: '¡Policia!',
+                            pronunciation: 'Po·li·cia!',
+                            definition: 'Police',
+                        },
+                        {
+                            term: '¡Veo el arma!',
+                            pronunciation: 'Ve·o el ar·ma!',
+                            definition: 'I see the gun',
+                        },
+                        {
+                            term: '¡Suéltelo!',
+                            pronunciation: 'Su·él·te·lo!',
+                            definition: 'Drop it!',
+                        },
+                        {
+                            term: '¡Manos en la cabeza!',
+                            pronunciation: 'Ma·nos en la ca·be·za!',
+                            definition: 'Hands on head',
+                        },
+                        {
+                            term: '¡Manos en la espalda!',
+                            pronunciation: 'Ma·nos en la es·pal·da!',
+                            definition: 'Hands on the back',
+                        },
+                        {
+                            term: '¡Separe los pies!',
+                            pronunciation: 'Se·pa·re los pi·es!',
+                            definition: 'Spread your feet',
+                        },
+                        {
+                            term: '¡Está arrestado!',
+                            pronunciation: 'Es·tá a·rre·sta·do!',
+                            definition: "You're arrested",
+                        },
+                        {
+                            term: '¡No se mueva!',
+                            pronunciation: 'No se mu·ev·a!',
+                            definition: "Don't move!",
+                        },
+                        {
+                            term: '¡Acuéstese boca abajo!',
+                            pronunciation: 'A·cué·ste·se bo·ca a·ba·jo!',
+                            definition: 'Lay on your stomach.',
+                        },
+                        {
+                            term: '¡Brazos afuera!',
+                            pronunciation: 'Bra·zos a·fue·ra!',
+                            definition: 'Arms out',
+                        },
+                        {
+                            term: '¡Manos arriba!',
+                            pronunciation: 'Man·os a·rri·ba!',
+                            definition: 'Hands up',
+                        },
+                        {
+                            term: '¡Más!',
+                            pronunciation: 'Más!',
+                            definition: '',
+                        },
+                        {
+                            term: '¡Voltéese!',
+                            pronunciation: 'Vol·té·ese!',
+                            definition: 'Turn around',
+                        },
+                        {
+                            term: '¡Ahorita!',
+                            pronunciation: 'Ah·o·rita',
+                            definition: 'Right now!',
+                        },
+                        {
+                            term: '¡Ahora!',
+                            pronunciation: 'Ah·o·ra',
+                            definition: 'Now',
+                        },
+                        {
+                            term: '¡Míreme!',
+                            pronunciation: 'Mí·re·me!',
+                            definition: 'Look at me',
+                        },
+                        {
+                            term: '¡No toque!',
+                            pronunciation: 'No to·que!',
+                            definition: "Don't touch.",
+                        },
+                        {
+                            term: '¡Escuche!',
+                            pronunciation: 'Es·cu·che!',
+                            definition: 'Listen',
+                        },
+                        {
+                            term: '¡Alto!',
+                            pronunciation: 'Al·to!',
+                            definition: 'Stop!',
+                        },
+                        {
+                            term: '¡Venga aquí!',
+                            pronunciation: 'Ven·ga a·qui',
+                            definition: 'Come here!',
+                        },
+                        {
+                            term: '¡Levántese!',
+                            pronunciation: 'Le·ván·te·se!',
+                            definition: 'Stand up',
+                        },
+                        {
+                            term: '¡Despacio!',
+                            pronunciation: 'De·spa·ci·o!',
+                            definition: 'Slowly',
+                        },
+                        {
+                            term: '¡Silencio!',
+                            pronunciation: 'Si·len·ci·o!',
+                            definition: 'Silent.',
+                        },
+                        {
+                            term: '¡Camine atrás!',
+                            pronunciation: 'Ca·min·e a·tr·ás!',
+                            definition: 'Walk backwards',
+                        },
+                        {
+                            term: '¡Siga!',
+                            pronunciation: 'Si·ga!',
+                            definition: 'Continue!',
+                        },
+                        {
+                            term: '¡No mire!',
+                            pronunciation: 'No mi·re!',
+                            definition: "Don't look.",
+                        },
+                        {
+                            term: '¡Regrese!',
+                            pronunciation: 'Re·gre·se!',
+                            definition: 'Return!',
+                        },
+                        {
+                            term: '¡Salga!',
+                            pronunciation: 'Sal·ga!',
+                            definition: 'Out!',
+                        },
+                        {
+                            term: '¡Siéntese!',
+                            pronunciation: 'Si·én·te·se!',
+                            definition: 'Sit down.',
+                        },
+                        {
+                            term: '¡Quítese!',
+                            pronunciation: 'Quí·te·se!',
+                            definition: 'Remove',
+                        },
+                        {
+                            term: '¡Abra lachaqueta!',
+                            pronunciation: 'A·bra la·cha·que·ta!',
+                            definition: 'Open the jacket.',
+                        },
+                        {
+                            term: '¡Levante la camisa!',
+                            pronunciation: 'Le·van·te la ca·mi·sa!',
+                            definition: 'Lift up the shirt.',
+                        },
+                        {
+                            term: '¡Levante el sueter!',
+                            pronunciation: 'Le·van·te el sue·ter!',
+                            definition: 'Lift up your sweater',
+                        },
+                        {
+                            term: '¡De rodillas!',
+                            pronunciation: 'De ro·di·llas',
+                            definition: 'On your knees',
+                        },
+                        {
+                            term: '¡Cruce los pies!',
+                            pronunciation: 'Cru·ce los pi·es!',
+                            definition: 'Cross your feet!',
+                        },
+                        {
+                            term: 'Cálmese.',
+                            pronunciation: 'Cál·me·se.',
+                            definition: 'Calm down.',
+                        },
+                        {
+                            term: '!Cállese!',
+                            pronunciation: 'Cá·lle·se',
+                            definition: 'Shut up! (Try to avoid)',
+                        },
+                    ],
+                },
+            ];
+        </script>
+    </body>
+</html>
