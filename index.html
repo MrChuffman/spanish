@@ -46,13 +46,16 @@
             Spanish Cards
         </h3>
         <div
-            class="max-w-2xl mx-4 md:mx-auto mt-4 bg-white rounded-xl shadow-lg flex flex-col"
+            class="max-w-2xl mx-4 md:mx-auto mt-4 bg-white rounded-xl shadow-lg flex flex-col text-lg"
         >
-            <div id="show" class="text-center pt-4">
+            <div id="show" class="grid self-center content-center pt-4 h-40">
                 Select a card set from above
             </div>
             <hr class="h-px my-8 bg-gray-200 border-0" />
-            <div id="hide" class="text-white pb-2">
+            <div
+                id="hide"
+                class="grid self-center content-center text-white pb-2 h-40"
+            >
                 <div
                     id="hideBlur"
                     class="flex flex-col items-center gap-4"
@@ -240,6 +243,7 @@
                 cards.sort((a, b) => 0.5 - Math.random());
 
                 showCard(0);
+                resetTip();
             };
 
             const updateCardCount = () => {
