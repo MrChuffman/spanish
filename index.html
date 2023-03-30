@@ -48,14 +48,6 @@
         <div
             class="max-w-2xl mx-4 md:mx-auto mt-4 bg-white rounded-xl shadow-lg flex flex-col"
         >
-            <button
-                type="button"
-                class="-ml-px bg-white px-3 py-4 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10 rounded-t-xl"
-                onClick="showTip()"
-            >
-                <span class="text-yellow-300 font-bold">💡</span>
-                Hint
-            </button>
             <div id="show" class="text-center pt-4">
                 Select a card set from above
             </div>
@@ -73,10 +65,33 @@
                 </div>
                 <div id="hideHint" class="text-center pt-4">&nbsp;</div>
             </div>
-            <span class="grid grid-cols-3 rounded-md shadow-sm pt-6">
+            <span
+                id="answerButtons"
+                class="grid grid-cols-2 rounded-md shadow-sm pt-6"
+            >
                 <button
                     type="button"
-                    class="rounded-l-md bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+                    class="rounded-b-lg bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+                    onClick="showTip()"
+                >
+                    <span class="text-yellow-300 font-bold">💡</span>
+                    Hint
+                </button>
+                <button
+                    type="button"
+                    class="rounded-b-lg -ml-px bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+                    onClick="showAnswer()"
+                >
+                    ⓐⓝⓢⓦⓔⓡ
+                </button>
+            </span>
+            <span
+                id="nextCardButtons"
+                class="grid grid-cols-2 rounded-md shadow-sm pt-6 hidden"
+            >
+                <button
+                    type="button"
+                    class="rounded-b-lg bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
                     onClick="wrong()"
                 >
                     <span class="text-red-800 font-bold">✕</span>
@@ -84,14 +99,7 @@
                 </button>
                 <button
                     type="button"
-                    class="-ml-px bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
-                    onClick="showAnswer()"
-                >
-                    ⓐⓝⓢⓦⓔⓡ
-                </button>
-                <button
-                    type="button"
-                    class="-ml-px rounded-r-md bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+                    class="rounded-b-lg -ml-px bg-white px-3 py-8 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
                     onClick="correct()"
                 >
                     <span class="text-green-500 font-bold">✓</span>
@@ -104,7 +112,7 @@
         >
             <button
                 type="button"
-                class="inline-flex items-center text-center gap-x-1.5 rounded-md bg-indigo-600 px-2.5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-max"
+                class="inline-flex items-center text-center gap-x-1.5 rounded-md bg-gray-800 px-2.5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-max"
                 onClick="randomizeCards()"
             >
                 <svg
@@ -144,6 +152,7 @@
                     hideElHidden = false;
                 } else {
                     document.getElementById('hideBlur').style.filter = null;
+                    showNextCardButtons();
                 }
             };
 
@@ -151,6 +160,25 @@
                 hideElHidden = false;
                 hideEl.classList.remove('text-white');
                 document.getElementById('hideBlur').style.filter = null;
+                showNextCardButtons();
+            };
+
+            const showAnswerButtons = () => {
+                document
+                    .getElementById('nextCardButtons')
+                    .classList.add('hidden');
+                document
+                    .getElementById('answerButtons')
+                    .classList.remove('hidden');
+            };
+
+            const showNextCardButtons = () => {
+                document
+                    .getElementById('answerButtons')
+                    .classList.add('hidden');
+                document
+                    .getElementById('nextCardButtons')
+                    .classList.remove('hidden');
             };
 
             const resetTip = () => {
@@ -204,6 +232,8 @@
                 ]
                     ? cards[num]['hint']
                     : '';
+
+                showAnswerButtons();
             };
 
             const randomizeCards = () => {
@@ -216,8 +246,6 @@
                 document.getElementById(
                     'remainingCards'
                 ).innerHTML = `${cardCorrectCount} of ${cardCount} correct.`;
-
-                console.log(cards);
             };
 
             const correct = () => {
